@@ -1,0 +1,421 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+
+}
+
+/* Footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: #222222;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand {
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New Page */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Edit Page */
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show Page  */
+.show-img {
+    height: 50vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Review Page */
+.submit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Map */
+#map { 
+    height: 400px;
+    width: 80vh;
+}
+
+/* Footer link under login form */
+.form-footer {
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+}
+
+.signup-link {
+  color: #fe424d;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.signup-link:hover {
+  color: #c51c28; /* darker shade of theme color */
+  text-decoration: underline;
+}
+
+/* Footer link under signup form */
+.login-link {
+  color: #fe424d;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.login-link:hover {
+  color: #c51c28; /* darker shade */
+  text-decoration: underline;
+}
+
+.login-to-review-link {
+  color: #fe424d;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.login-to-review-link:hover {
+  color: #c51c28; /* darker shade */
+  text-decoration: underline;
+}
+
+
+/* Navbar auth links (Signup, Login, Logout) */
+.nav-auth-link {
+  color: #fe424d !important;   /* theme color */
+  font-weight: 600;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.nav-auth-link:hover {
+  color: #c51c28 !important;   /* darker shade on hover */
+  text-decoration: underline;
+}
+
+/* Auth page headings */
+/* .auth-heading {
+  color: #fe424d;
+  text-align: center; 
+  margin-bottom: 1rem;
+} */
+
+/* --- Auth page centered wrapper --- */
+.auth-page {
+  display: flex;
+  align-items: center;           /* vertical centering */
+  justify-content: center;       /* horizontal centering */
+  min-height: calc(100vh - 80px);/* full viewport minus header (adjust 80px if your header is taller) */
+  padding: 2rem;                 /* breathing room on small screens */
+  background-color: #fafafa;     /* optional subtle background so box pops */
+}
+
+/* Auth form box */
+.auth-form {
+  width: 520px;                  /* fixed width (increase as requested) */
+  max-width: 95%;                /* responsive: never overflow on small screens */
+  margin: 0 auto;
+  padding: 2.25rem 2.5rem;
+  border: 3px solid #dcdcdc;     /* thicker theme border */
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  box-sizing: border-box;
+}
+
+/* Heading inside the box */
+.auth-heading {
+  /* color: #fe424d; */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+}
+
+/* Make inputs full-width inside the box */
+.auth-form input.form-control,
+.auth-form textarea.form-control,
+.auth-form .form-control {
+  width: 100%;
+}
+
+/* Center submit button inside auth forms */
+/* Center submit button inside auth forms (balanced size) */
+.auth-form .submit-btn {
+  display: block;
+  margin: 1rem auto 0 auto;   /* center horizontally */
+  padding: 0.45rem 1.5rem;    /* slightly increased padding */
+  font-size: 1rem;            /* keep text size normal */
+  border-radius: 6px;
+}
+
+/* Footer link consistent styling */
+.form-footer { font-size: 0.95rem; margin-top: 1rem; }
+.signup-link, .login-link {
+  color: #fe424d;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 6px;
+}
+.signup-link:hover, .login-link:hover { color: #c51c28; text-decoration: underline; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .auth-form { width: 92%; padding: 1.5rem; }
+  .auth-heading { font-size: 1.6rem; }
+}
+
+/* Filters container */
+/* #filters {
+  display: flex;
+  flex-wrap: nowrap;       
+  align-items: center;    
+  justify-content: flex-start;
+  overflow-x: auto;        
+  gap: 1rem;               
+  padding-bottom: 0.5rem;  
+} */
+
+/* Filters container */
+#filters {
+  display: flex;
+  flex-wrap: wrap;          /* allow wrapping instead of slider */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;             /* tighter gap between icons */
+  margin: 1.5rem 0 0 0;     /* 👈 top margin increased */
+  padding: 0;               /* remove extra padding */
+}
+
+
+/* Each filter icon */
+.filter {
+  text-align: center;
+  margin: 0;
+  opacity: 0.85;
+  width: 65px;             /* smaller width so more icons fit */
+  flex: 0 0 auto;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.filter p {
+  font-size: 0.75rem;
+  margin: 0.25rem 0 0 0;
+}
+
+/* Tax toggle aligned right, slimmer */
+.tax-toggle {
+  margin-left: auto;        /* pushes it to the right end */
+  border: 0.5px solid #ccc;
+  border-radius: 1rem;
+  height: 3rem;           /* reduced height */
+  padding: 0.25rem 0.75rem; /* slimmer padding */
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;       /* slightly smaller font */
+}
+
+/* Listing card image container */
+.listing-img-wrapper {
+  height: 18rem;             /* desired image height */
+  overflow: hidden;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.listing-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* crop image to fill area */
+  display: block;
+}
+
+/* Card and link styles */
+.listing-card .card-body { padding: 1rem; }
+.listing-link { color: inherit; }
+.listing-card .card-text b { font-size: 1.05rem; }
+
+/* Responsive tweak: smaller image on very small screens */
+@media (max-width: 576px) {
+  .listing-img-wrapper { height: 14rem; }
+}
+
+/* Optional small visual for the filter icons */
+.filter i { font-size: 1.2rem; color: #444; }
+.filter p { color: #333; }
+
+/* Improve spacing around filters on small screens */
+@media (max-width: 576px) {
+  #filters { justify-content: center; gap: 0.5rem; }
+  .filter { width: 70px; font-size: 0.85rem; }
+}
+
+/* Username display next to "List Your Stay" */
+.nav-username {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #555;
+  margin-left: 1rem;   /* bigger gap from "List Your Stay" */
+}
+
+.nav-username i {
+  margin-right: 0.2rem;  /* tiny gap between icon and username */
+  font-size: 0.95rem;
+}
+
+/* Password toggle inside input */
+.pw-wrapper {
+  position: relative;
+}
+
+/* ensure input reserves space for the toggle icon */
+.with-toggle {
+  padding-right: 3.2rem; /* adjust if you want more space */
+}
+
+/* clickable icon wrapper (no border/background) */
+.pw-toggle {
+  position: absolute;
+  right: 0.6rem; /* distance from right edge */
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  color: #222; /* change to match your theme */
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* remove default focus outline but keep accessible focus style */
+.pw-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(254, 66, 77, 0.12); /* subtle focus ring in theme color */
+  border-radius: 4px;
+}
+
+/* if you want the icon slightly larger */
+.pw-toggle .fa {
+  font-size: 1.05rem;
+}
+
+/* make sure pw-toggle doesn't force a new line */
+.pw-wrapper .pw-toggle { display: inline-flex; }
+
+/* remove any border if you accidentally used input-group-text */
+.pw-toggle, .pw-toggle .fa { border: none; background: transparent; }
+
+/* Make select a bit rounded and consistent with inputs */
+.form-select {
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  min-height: 2.4rem;
+}
+

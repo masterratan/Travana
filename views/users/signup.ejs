@@ -1,0 +1,62 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="auth-page">
+  <div class="auth-form">
+    <h1 class="auth-heading">SignUp on Travana</h1>
+    
+    <form action="/signup" method="POST" class="needs-validation auth-full-form" novalidate>
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input 
+          name="username"
+          id="username"
+          type="text"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">please set a username</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input 
+          name="email"
+          id="email"
+          type="email"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">please set an email</div>
+      </div>
+
+        <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <div class="pw-wrapper position-relative">
+            <input
+            name="password"
+            id="password"
+            type="password"
+            class="form-control with-toggle"
+            required
+            aria-describedby="passwordHelp"
+            />
+            <span class="pw-toggle" tabindex="0" role="button" aria-pressed="false" aria-label="Show password">
+            <i class="fa fa-eye toggle-password" data-target="password" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="invalid-feedback">please set a password</div>
+        </div>
+
+
+
+      <!-- Centered submit button -->
+      <button type="submit" class="btn btn-success submit-btn">SignUp</button>
+    </form>
+
+    <div class="form-footer mt-3 text-center">
+      Already have an account?
+      <a href="/login" class="login-link">Login here</a>
+    </div>
+  </div>
+</div>

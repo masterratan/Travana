@@ -1,0 +1,48 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="auth-page">
+  <div class="auth-form">
+    <h1 class="auth-heading">Login</h1>
+
+    <form action="/login" method="POST" class="needs-validation auth-full-form" novalidate>
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input 
+          name="username"
+          id="username"
+          type="text"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">please enter username</div>
+      </div>
+
+        <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <div class="pw-wrapper position-relative">
+            <input
+            name="password"
+            id="password"
+            type="password"
+            class="form-control with-toggle"
+            required
+            aria-describedby="passwordHelp"
+            />
+            <span class="pw-toggle" tabindex="0" role="button" aria-pressed="false" aria-label="Show password">
+            <i class="fa fa-eye toggle-password" data-target="password" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="invalid-feedback">please set a password</div>
+        </div>
+
+
+      <!-- Centered submit button -->
+      <button type="submit" class="btn btn-success submit-btn">Login</button>
+    </form>
+
+    <div class="form-footer mt-3 text-center">
+      Don't have an account?
+      <a href="/signup" class="signup-link">Sign Up here</a>
+    </div>
+  </div>
+</div>
