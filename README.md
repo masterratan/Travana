@@ -17,6 +17,19 @@ It features secure authentication, categories with icons, flash messages, Mapbox
 
 ---
 
+## Screenshot
+![HomePage](/public/images/home-page.png)
+![ViewListing](/public/images/view-listing-page.png)
+![ReviewAndMapPage](/public/images/review-and-map.png)
+![IconFilter](/public/images/icon-filter.png)
+![SignupPage](/public/images/signup-page.png)
+![LoginPage](/public/images/login-page.png)
+![NewListingPage](/public/images/new-listing-page.png)
+![PrivacyPolicyPage](/public/images/privacy-policy-page.png)
+![TermsPage](/public/images/terms-page.png)
+
+---
+
 ## 🚀 Features
 - 🏗️ **MVC Architecture** (Model–View–Controller structured codebase)  
 - 🔑 **User Authentication** (Signup/Login/Logout with sessions)  
