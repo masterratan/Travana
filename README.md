@@ -13,23 +13,25 @@ It features secure authentication, categories with icons, flash messages, Mapbox
 ---
 
 ## 🔗 Live Demo
-👉 [Travana on Render](https://project-travana.onrender.com/)  
+👉 [Travana](https://project-travana.onrender.com/)  
 
 ---
 
 ## 🚀 Features
+- 🏗️ **MVC Architecture** (Model–View–Controller structured codebase)  
 - 🔑 **User Authentication** (Signup/Login/Logout with sessions)  
 - 📝 **CRUD Listings** (Create, Read, Update, Delete)  
 - 🗂️ **Categories with Icons** for better organization  
 - 🌍 **Mapbox Integration** to display locations  
-- 💾 **MongoDB Integration** with Mongoose  
+- ☁️ **Cloudinary Integration** for image uploads  
+- 💾 **MongoDB Atlas Integration** with Mongoose  
 - ✨ **Flash Messages** for success & error notifications  
-- 🎨 **Responsive UI** with EJS templating  
+- 🎨 **Desktop Responsive UI** with EJS templating    
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** EJS, CSS, Bootstrap/Tailwind  
+- **Frontend:** EJS, CSS, Bootstrap
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB (Mongoose)  
 - **Templating Engine:** EJS  
@@ -42,7 +44,7 @@ It features secure authentication, categories with icons, flash messages, Mapbox
 2. Sign up or log in to create your own account.  
 3. Add new listings with title, description, price, and category.  
 4. Locations are displayed on an interactive **Mapbox map**.  
-5. Browse listings by category or search for specific destinations.  
+5. Browse listings by category icons.
 6. Edit or delete your listings anytime from your dashboard.  
 
 ---
@@ -50,13 +52,12 @@ It features secure authentication, categories with icons, flash messages, Mapbox
 ## 🔧 Environment Variables
 Create a `.env` file in the root of the project with the following keys:  
 
-MONGO_URI=your_mongodb_connection_string  
-SECRET=your_session_secret  
+CLOUD_NAME=your_cloudinary_cloud_name  
+CLOUD_API_KEY=your_cloudinary_api_key  
+CLOUD_API_SECRET=your_cloudinary_api_secret  
 MAPBOX_TOKEN=your_mapbox_access_token  
-NODE_ENV=development  
-
-⚠️ **Do not share your `.env` file** publicly.  
-For deployment on **Render**, add these keys in **Dashboard → Environment → Environment Variables**.  
+ATLASDB_URL=your_mongodb_atlas_connection_string  
+SECRET=your_session_secret   
 
 ---
 
@@ -74,7 +75,7 @@ For deployment on **Render**, add these keys in **Dashboard → Environment → 
 4. **Run the app**  
    npm start  
 
-The app will be available at **http://localhost:3000**
+The app will be available at **http://localhost:8080**
 
 ---
 
