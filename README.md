@@ -20,7 +20,7 @@ It features secure authentication, categories with icons, flash messages, Mapbox
 ## Screenshot
 ![HomePage](/public/images/home-page.png)
 ![ViewListing](/public/images/view-listing-page.png)
-![ReviewAndMapPage](/public/images/review-and-map.png)
+![ReviewAndMapPage](/public/images/reviews-and-map.png)
 ![IconFilter](/public/images/icon-filter.png)
 ![SignupPage](/public/images/signup-page.png)
 ![LoginPage](/public/images/login-page.png)
