@@ -86,7 +86,7 @@ SECRET=your_session_secret
 3. **Setup environment variables** (see above).  
 
 4. **Run the app**  
-   npm start  
+   node app.js  
 
 The app will be available at **http://localhost:8080**
 
